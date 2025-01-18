@@ -1,19 +1,27 @@
-import Link from 'next/link'
-import React from 'react'
+import Link from 'next/link';
+import React from 'react';
 
 const Header = () => {
   return (
-    <div>
-           <nav className='bg-zinc-700 text-white flex justify-between px-14'>
-          <div className="w-24 rotate-[4.5deg] py-1"><img src="Huzaifa logo.png" alt="Huzaifa logo" /></div>
-        <ul className='flex gap-10 items-center font-medium cursor-pointer text-xl'>
-          <Link href = '/'>Home</Link>
-          <Link href = '/About'>About</Link>
-          <Link href = '/Contact'>Contact</Link>
+    <header className="header-container">
+      <nav className="navbar">
+        <div className="logo-container">
+          <img src="Huzaifa logo.png" alt="Huzaifa logo" className="logo" />
+        </div>
+        <ul className="nav-links">
+          <li className="nav-item">
+            <Link href="/">Home</Link>
+          </li>
+          <li className="nav-item">
+            <Link href="/About">About</Link>
+          </li>
+          <li className="nav-item">
+            <Link href="/Contact">Contact</Link>
+          </li>
         </ul>
       </nav>
-    </div>
-  )
-}
+    </header>
+  );
+};
 
-export default Header
+export default Header;

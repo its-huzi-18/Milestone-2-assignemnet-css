@@ -2,6 +2,57 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
+/* Header Container */
+.header-container {
+  background-color: #3f3f46; /* Tailwind: bg-zinc-700 */
+  color: #ffffff; /* Tailwind: text-white */
+  padding: 0.5rem 0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3.5rem; /* Tailwind: px-14 */
+}
+
+/* Logo Container */
+.logo-container {
+  width: 6rem; /* Tailwind: w-24 */
+  transform: rotate(4.5deg);
+  padding: 0.25rem 0; /* Tailwind: py-1 */
+}
+
+.logo {
+  width: 100%;
+  display: block;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 2.5rem; /* Tailwind: gap-10 */
+  align-items: center;
+  font-size: 1.25rem; /* Tailwind: text-xl */
+  font-weight: 500; /* Tailwind: font-medium */
+  cursor: pointer;
+  list-style: none;
+}
+
+.nav-item {
+  transition: color 0.2s ease;
+}
+
+.nav-item a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  color: #a3a3a3; /* Slight gray on hover */
+}
+
 
 main {
   display: flex;
@@ -68,6 +119,121 @@ main div:last-child {
   padding: 2.5rem;
   margin-right: 2rem;
 }
+/* contact */
+.about-section {
+  color: #4a5568; /* text-gray-600 */
+  font-family: 'body-font'; /* Add your font stack */
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem; /* px-5 py-8 */
+  display: flex;
+  flex-direction: column;
+}
+
+.about-content {
+  max-width: 66.6667%; /* lg:w-4/6 */
+  margin: 0 auto;
+}
+
+.about-title {
+  margin: -1rem 0 -6.2rem 0;
+  text-align: center;
+  font-size: 3rem; /* text-5xl */
+  font-weight: 600; /* font-semibold */
+  animation: color-change 2s infinite; /* Add keyframes for animation */
+}
+
+.about-card {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.75rem; /* mt-11 */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* shadow-lg */
+  padding: 2.5rem; /* px-10 */
+}
+
+.profile-section {
+  flex: 1 1 33.3333%; /* sm:w-1/3 */
+  text-align: center;
+  padding-right: 2rem; /* sm:pr-8 */
+  padding-top: 2rem; /* sm:py-8 */
+}
+
+.profile-icon {
+  width: 5rem; /* w-20 */
+  height: 5rem; /* h-20 */
+  border-radius: 50%; /* rounded-full */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #edf2f7; /* bg-gray-200 */
+  color: #a0aec0; /* text-gray-400 */
+}
+
+.profile-svg {
+  width: 2.5rem; /* w-10 */
+  height: 2.5rem; /* h-10 */
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.profile-name {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 500; /* font-medium */
+  color: #1a202c; /* text-gray-900 */
+  margin-top: 1rem; /* mt-4 */
+}
+
+.profile-divider {
+  width: 3rem; /* w-12 */
+  height: 0.25rem; /* h-1 */
+  background-color: #667eea; /* bg-indigo-500 */
+  border-radius: 0.25rem; /* rounded */
+  margin: 0.5rem 0; /* mt-2 mb-4 */
+}
+
+.profile-description {
+  font-size: 1rem; /* text-base */
+}
+
+.about-description-section {
+  flex: 1 1 66.6667%; /* sm:w-2/3 */
+  padding-left: 2rem; /* sm:pl-8 */
+  padding-top: 2rem; /* sm:py-8 */
+  border-left: 1px solid #e2e8f0; /* sm:border-l border-gray-200 */
+  margin-top: 1rem; /* sm:mt-0 */
+  padding-top: 1rem; /* pt-4 */
+  text-align: left; /* sm:text-left */
+}
+
+.about-description {
+  font-size: 1rem; /* text-md */
+  line-height: 1.625; /* leading-relaxed */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.learn-more {
+  color: #667eea; /* text-indigo-500 */
+  display: inline-flex;
+  align-items: center;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.learn-more-svg {
+  width: 1rem; /* w-4 */
+  height: 1rem; /* h-4 */
+  margin-left: 0.5rem; /* ml-2 */
+}
+
 
 .map-iframe {
   position: absolute;
@@ -283,4 +449,3 @@ main div:last-child {
   background: #4f46e5;
 }
 
-/* P

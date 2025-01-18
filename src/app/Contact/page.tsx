@@ -1,5 +1,4 @@
 import React from 'react';
-import './Page.css'; // Import external CSS file
 
 function Page() {
   return (
